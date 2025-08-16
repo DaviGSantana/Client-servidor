@@ -1,16 +1,38 @@
-# 🖧 Client-Servidor (TCP/UDP)
+# Client-servidor
 
-Este projeto implementa um **servidor** e um **cliente TCP/UDP** em Python, ideal para fins educacionais e testes de comunicação em redes.  
+Este projeto implementa um modelo de **cliente-servidor** utilizando **sockets TCP e UDP em Python**.  
+O objetivo é demonstrar a comunicação em rede entre processos, permitindo o envio e recebimento de mensagens entre clientes e servidor, tanto no protocolo orientado a conexão (TCP) quanto no protocolo sem conexão (UDP).  
+
+---
 
 ## 🚀 Funcionalidades
-- 📡 Suporte a **TCP e UDP**
-- 🖥️ Comunicação entre múltiplos clientes e servidor
-- 🔍 Exemplo prático para estudo de **redes de computadores**
 
-## 📦 Requisitos
-- Python 3.
+- 🌐 **Servidor**: Escuta conexões TCP e mensagens UDP, processando e respondendo a múltiplos clientes.
+- 💻 **Cliente TCP**: Estabelece conexão com o servidor e troca mensagens via protocolo TCP.
+- 📡 **Cliente UDP**: Envia e recebe mensagens do servidor via protocolo UDP.
+- 🧾 **Exemplo didático**: Ideal para estudo de programação de redes e sockets.
 
+---
 
+## 📂 Estrutura do Projeto
 
-![Captura de tela 2025-01-14 112424](https://github.com/user-attachments/assets/df00185e-ca42-420d-8a48-f1a0806aee96)
+- `servidor.py` → Implementação do servidor TCP/UDP.  
+- `clientTCP.py` → Implementação do cliente TCP.  
+- `clientUDP.py` → Implementação do cliente UDP.  
 
+---
+
+## 🛠️ Requisitos
+
+- Python **3**  
+- Bibliotecas padrão (`socket`, `sys`)  
+
+---
+
+## ▶️ Como Usar
+
+### 1️⃣ Executar o Servidor
+No terminal, execute o comando:
+
+```bash
+python servidor.py
